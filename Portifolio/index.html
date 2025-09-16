@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devclub | Portifólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="particula"></div>
+
+    <nav class="navegacao">
+        <ul class="menu">
+
+            <li> <a href="#Início" class="menu-link">Início</a>
+            </li>
+
+            <li> <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+
+
+            <li> <a href="#projeto" class="menu-link">Projetos</a>
+            </li>
+
+
+            <li> <a href="#contatos" class="menu-link">Contatos</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="Início" class="cabecalho">
+
+        <img src="img/eu.jpg" alt="Foto de Lindomar" class="foto_perfil">
+        <h1>Lindomar</h1>
+        <p class="cabecalho-sub-titulo">Desenvolvedor Front-End</p>
+
+
+    </main>
+
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Min</h2>
+
+        <div class="sobre-caixa">
+
+            <p class="sobre-paragrafo">
+                Sou um desenvolvedor de sistemas em experiência, especializado em Tecnologia
+                principal, ex: JavaScript, Html e CSS. Meu objetivo é transformar ideias complexas em
+                soluções digitais elegantes e funcionais.
+
+                Minha paixão está em construir aplicações robustas e escaláveis, focando em uma excelente
+                experiência de usuário e na qualidade do código. Adoro resolver problemas e aprender novas
+                tecnologias que me permitam criar produtos cada vez melhores.
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+
+
+
+            <div class="projetos-card">
+                <img src="img/projeto1.png" alt="Projeto 1" class="projeto-imagem">
+
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Loja de Carros</h3>
+                    <p class="paragrafo-projetos">Loja virtual moderna com animações suaves e responsiva</p>
+                </div>
+            </div>
+
+
+
+            <div class="projetos-card">
+                <img src="img/projeto2.png" alt="Projeto 1" class="projeto-imagem">
+
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Página de Viagens</h3>
+                    <p class="paragrafo-projetos">Uma página interativo com roteiro de viagens mais cobiçado do
+                        mundo
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="projetos-card">
+                <img src="img/projeto3.png" alt="Projeto 1" class="projeto-imagem">
+
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Microsofits</h3>
+                    <p class="paragrafo-projetos">Página da Microsofits criada para demonstrar conhecimento em
+                        diversas tecnologias</p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section id="Contatos" class="Contatos">
+
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
+
+            </div>
+
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite sua Mensagem" rows="6" id="mensagem"></textarea>
+            </div>
+            <button type="submit" class="botao-form">Enviar Whatsap</button>
+        </form>
+    </section>
+
+    <script>
+
+        function enviarWhats(event) {
+            event.preventDefault()
+
+            const nome = document.getElementById('nome').value;
+            const mensagem = document.getElementById('mensagem').value;
+            const telefone = '5581988875420'
+
+            const texto = `Me chamo ${nome}, ${mensagem}`
+            const msgFormatada = encodeURIComponent(texto)
+
+            const url = `https://wa.me/${telefone}?text=${msgFormatada}`
+
+            window.open(url, '_blank')
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

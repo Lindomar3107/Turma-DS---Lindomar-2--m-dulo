@@ -1,0 +1,54 @@
+
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+header{
+background-color: rgb(214, 23, 23);
+
+
+}
+
+h1{
+color: #e6e8ee;
+
+
+}
+
+nav{
+
+    color: rgb(212, 184, 184);
+    margin: 20px;
+}
+
+a{
+background-color: rgb(223, 214, 214);
+border: 2px solid black;
+border-radius: 10px;
+padding: 3px;
+margin: 5px;
+}
+
+
+.header_alinhamento{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+
+
+}
+
+
+body > p {
+  width: 350px;
+  background: pink;
+}
+
+footer {
+  background: orange;
+
+}

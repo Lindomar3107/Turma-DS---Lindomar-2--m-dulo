@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --cor-botao: brown;
+    --cor-menu-nav: #3a404e;
+    --cor-nav-acesso-link: gray;
+    --cor-fonte-botao: white;
+    --cor-subtitulo: #101828;
+
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+header {
+
+    margin: 10px 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.nav_logotipo {
+    color: #3a404e;
+    gap: 8px;
+
+}
+
+.nav_links {
+    color: gray;
+    gap: 32px;
+
+}
+
+.nav_acesso {
+    color: gray;
+    gap: 12px;
+}
+
+.botao-cadastro-nav {
+
+    background-color: brown;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 18px;
+    cursor: pointer;
+    border: none;
+
+}
+
+.botao-cadastro {
+
+    background-color: brown;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 18px;
+    cursor: pointer;
+    border: none;
+    width: 116px;
+    height: 41px;
+    font-size: 16px;
+
+}
+
+.Menu-link {
+
+    text-decoration: none;
+    position: relative;
+    color: gray;
+
+
+}
+
+main {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 96px
+}
+
+.main_section_sobre {
+
+    display: flex;
+    color: #8E2424;
+    text-align: center;
+    flex-direction: column;
+    max-width: 1440px;
+    max-height: 407px;
+    margin-top: 96px;
+    margin-bottom: 96px;
+}
+
+.main_section_sobre_p1 {
+
+    color: #8E2424;
+    font-size: 25px;
+    margin-bottom: 24px;
+
+}
+
+.main_section_sobre_p2 {
+
+    font-size: 48px;
+    color: #101828
+}
+
+.main_section_sobre_p3 {
+
+    color: #667085;
+    font-size: 20px;
+    max-width: 791px;
+    margin-top: 24px;
+
+}
+
+.main_section_dados {
+
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    padding: 96px;
+    gap: 100px;
+
+
+}
+
+.Text-number {
+    max-width: 280px;
+    max-height: 168px;
+    font-weight: bold;
+    color: #8E2424;
+    font-size: 60px;
+    justify-content: center;
+    margin-bottom: 12px;
+
+
+}
+
+.subtitulo-namber {
+    max-width: 280px;
+    max-height: 168px;
+    font-size: 18px;
+    margin-bottom: 8px;
+
+
+}
+
+.paragrafo-namber {
+
+    margin-bottom: 5px;
+    max-width: 280px;
+    max-height: 168px;
+    gap: 20px;
+    font-size: 16px;
+    color: #667085;
+
+}
+
+
+footer {
+
+    text-align: center;
+    margin: 170px;
+}
+
+.titulo_footer {
+
+    font-size: 36px;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subtitulo_footer {
+
+    color: #667085;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+input {
+
+    width: 320px;
+    height: 30px;
+    border-radius: 8px;
+    padding: 3px;
+
+}
+
+.Pesquisar {
+
+    margin-right: 10px;
+    text-align: center;
+    border-color: gray;
+
+}
+
+.text-placeholder {
+
+    font-size: 15px;
+
+}
+
+.final_footer {
+
+    margin-top: 32px;
+    font-size: 18px;
+    color: black;
+
+}
